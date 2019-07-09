@@ -1,8 +1,875 @@
 .main {
-    width: 1431px;
+    width: 75%;
     height: 972px;
-    margin-top: 21px;
+    margin-top: 13px;
     background-color: #ffffff;
     float: right;
-    border: 1px solid;
+
+    .login {
+        display: flex;
+        position: absolute;
+        right: 50px;
+
+        img {
+            height: 11px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        span {
+            text-shadow: 0 3px 6px #ffca00;
+            font-family: "Nunito Sans";
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    .top {
+        .title {
+            width: 271px;
+            height: 59px;
+            color: #989898;
+            font-family: "Nunito Sans";
+            font-size: 43px;
+            font-weight: 200;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 92px;
+            margin-left: 123px;
+        }
+
+        .input-group {
+            margin-top: 23px;
+            width: 80%;
+            margin-left: 9%;
+
+            .input-group-append {
+                margin-right: 14%;
+                position: relative;
+
+                .shorten {
+                    width: 65px;
+                    height: 19px;
+                    position: absolute;
+                    text-transform: uppercase;
+                    left: 105px;
+                    font-size: smaller;
+                    top: 38px;
+                    background: #fff;
+                    text-align: center;
+                }
+
+                #domains {
+                    text-decoration: underline;
+                    text-decoration-color: rgba(204, 204, 204, 0.31);;
+                }
+            }
+            .title-inputs {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0px 15px;
+
+                label, span {
+                    text-align: initial;
+                    margin-bottom: unset;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                }
+
+                .domains {
+                    margin-right: 22%;
+                    //margin-right: 70px;
+                }
+            }
+
+            #url {
+                margin-right: 6%;
+                height: 56px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                border-radius: 3px;
+                background-color: #ffffff;
+                border-left: 7px solid #ff5a87;
+            }
+
+            #url::placeholder {
+                border-bottom: 1px solid rgba(204, 204, 204, 0.31);
+            }
+
+            .button-round {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 50%;
+                width: 59px;
+                height: 59px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                background-color: #e9387f;
+                color: #ffffff !important;
+            }
+        }
+
+        .links {
+            display: flex;
+            margin-left: 9%;
+
+            .geo-links, .multistore-links {
+                color: #707070;
+            }
+
+            span {
+                position: relative;
+                width: 87px;
+                height: 23px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                border-radius: 3px;
+                border: 1px solid #a2d8f7;
+                background-color: #ffffff;
+                margin: 0 13px;
+                font-family: "Nunito Sans";
+                font-size: 11px;
+                font-weight: 300;
+                text-align: center;
+                letter-spacing: 0.55px;
+                text-transform: uppercase;
+                padding-top: 2px;
+
+                .fa-plus-circle, .fa-check-circle {
+                    font-size: 13px;
+                    position: absolute;
+                    color: #000000;
+                    top: 46%;
+                    cursor: pointer;
+                }
+                .fa-check-circle {
+                    color: #e9387f;
+                }
+            }
+        }
+
+        button {
+            color: #707070 !important;
+            font-size: 15px;
+            font-weight: 200;
+            letter-spacing: 0.75px;
+            border: none !important;
+            text-transform: lowercase;
+            height: 56px;
+        }
+    }
+
+    .full-info {
+        position: relative;
+
+        .content {
+            text-align: initial;
+            margin-left: 9%;
+            margin-top: 5%;
+            width: 228px;
+            height: 128px;
+
+            .title {
+                color: #989898;
+                font-family: "Nunito Sans";
+                font-size: 46px;
+                font-weight: 200;
+                line-height: 63px;
+                text-transform: uppercase;
+            }
+        }
+
+        .three-dots {
+            display: flex;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+
+            .spotify, .ticket, .music {
+                text-align: initial;
+                display: flex;
+                flex-direction: column;
+                margin: 0 29px;
+
+                .fa-plus-circle {
+                    width: 13px;
+                    height: 13px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    z-index: 3;
+                }
+            }
+
+            .spotify-info, .ticket-info, .music-info {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23px;
+                margin-bottom: 10px;
+                color: #989898;
+                display: block;
+                white-space: normal;
+                width: 50%;
+            }
+
+            .spotify {
+                .fa-plus-circle {
+                    color: #47e3ff;
+                }
+            }
+
+            .ticket {
+                .fa-plus-circle {
+                    color: #56a2fd;;
+                }
+            }
+
+            .music {
+                .fa-plus-circle {
+                    color: #cd71e6;
+                }
+            }
+
+            span {
+                color: #323c47;
+                font-family: "Nunito Sans";
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            .fa-arrow-up {
+                width: 15px;
+                height: 17px;
+                color: #a2eb16;
+            }
+        }
+
+        .audience {
+            position: absolute;
+            top: 130%;
+            left: 5%;
+
+            span {
+                color: #000000;
+                font-family: "Nunito Sans";
+                font-size: 19px;
+                font-weight: 700;
+                margin-left: 35px;
+            }
+
+            .small-info {
+                white-space: normal;
+                line-height: 2.5em;
+                width: 52%;
+                margin: 10px auto;
+                text-align: initial;
+                color: #989898;;
+
+                .fa-arrow-up {
+                    width: 13px;
+                    height: 13px;
+                    color: #ff5a87;
+                    margin-left: 10px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        .graphics {
+            .intermediate-bands {
+                width: 73%;
+                height: 495px;
+                background-color: transparent;
+                position: absolute;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                z-index: 4;
+                left: 9%;
+                top: 38%;
+            }
+            .intermediate-bands-small {
+                width: 25%;
+                height: 200px;
+                background-color: transparent;
+                position: absolute;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                z-index: 4;
+                top: 220%;
+                left: 36%;
+            }
+
+            span {
+                position: absolute;
+                color: #ffffff;
+                font-family: "Nunito Sans";
+                font-size: 24px;
+                font-weight: 400;
+                right: 19%;
+                top: 165%;
+            }
+
+            .blue-count {
+                top: 275%;
+                z-index: 4;
+            }
+
+            .violet-count {
+                top: 382%;
+                z-index: 4;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            .turquoise-graph {
+                width: 101%;
+            }
+
+            .blue-graph {
+                top: 147%;
+                width: 101%;
+                z-index: 2;
+            }
+
+            .violet-graph {
+                top: 258%;
+                width: 102%;
+            }
+        }
+    }
+
+    .background-buttons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        z-index: 4;
+        top: 101%;
+
+        span {
+            margin-left: 18px;
+        }
+
+        .buttons-block {
+            display: flex;
+            justify-content: space-evenly;
+
+            .fa-plus {
+                position: absolute;
+                font-size: 11px;
+                color: #fff;
+                top: 62%;
+                cursor: pointer;
+            }
+
+            .black-button {
+                left: 17%;
+            }
+
+            .white-button {
+                left: 76%;
+            }
+
+            img {
+                width: 29px;
+                height: 29px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .main {
+        .full-info {
+            .graphics {
+                span {
+                    top: 146%;
+                }
+
+                .blue-count {
+                    top: 253%;
+                }
+
+                .violet-count {
+                    top: 333%;
+                }
+
+                .intermediate-bands-small {
+                    top: 190%;
+                }
+
+                .blue-graph {
+                    top: 132%;
+                }
+
+                .violet-graph {
+                    top: 230%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1650px) {
+    .main {
+        .full-info {
+            .graphics {
+                .blue-graph {
+                    top: 128%;
+                }
+
+                .violet-graph {
+                    top: 224%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1580px) {
+    .main {
+        .full-info {
+            .graphics {
+                .intermediate-bands-small {
+                    top: 180%;
+                }
+
+                span {
+                    top: 138%;
+                }
+
+                .blue-count {
+                    top: 235%;
+                }
+
+                .violet-count {
+                    top: 311%;
+                }
+
+                .blue-graph {
+                    top: 123%;
+                }
+
+                .violet-graph {
+                    top: 215%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1545px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                .blue-graph {
+                    top: 121%;
+                }
+
+                .violet-graph {
+                    top: 211%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1525px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                .blue-graph {
+                    top: 118%;
+                }
+
+                .violet-graph {
+                    top: 207%;
+                }
+
+                .violet-count {
+                    top: 300%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1485px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                .intermediate-bands-small {
+                    top: 170%;
+                }
+
+                .blue-graph {
+                    top: 115%;
+                }
+
+                .violet-graph {
+                    top: 201%;
+                }
+
+                .blue-count {
+                    top: 220%;
+                }
+
+                .violet-count {
+                    top: 291%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1470px) {
+    .main {
+        .full-info {
+            .three-dots {
+                left: 33%;
+            }
+            .audience {
+                top: 110%;
+                left: 4%;
+            }
+            .graphics {
+                span {
+                    top: 130%;
+                }
+
+                .blue-count {
+                    top: 215%;
+                }
+
+                .violet-count {
+                    top: 285%;
+                }
+
+                .intermediate-bands-small {
+                    top: 170%;
+                }
+
+                .blue-graph {
+                    top: 112%;
+                }
+
+                .violet-graph {
+                    top: 197%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1420px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                .intermediate-bands-small {
+                    top: 150%;
+                }
+
+                .blue-graph {
+                    top: 110%;
+                }
+
+                .violet-graph {
+                    top: 193%;
+                }
+
+                .blue-count {
+                    top: 207%;
+                }
+
+                .violet-count {
+                    top: 277%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1370px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                .intermediate-bands-small {
+                    top: 180%;
+                }
+
+                img {
+                    top: 50%;
+                }
+
+                span {
+                    top: 169%;
+                }
+
+                .blue-graph {
+                    top: 157%;
+                }
+
+                .violet-graph {
+                    top: 237%;
+                }
+
+                .blue-count {
+                    top: 245%;
+                }
+
+                .violet-count {
+                    top: 316%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1245px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                span {
+                    top: 169%;
+                }
+
+                .blue-graph {
+                    top: 147%;
+                }
+
+                .violet-graph {
+                    top: 219%;
+                }
+
+                .blue-count {
+                    top: 236%;
+                }
+
+                .violet-count {
+                    top: 290%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1135px) {
+    .main {
+        .full-info {
+            .graphics {
+
+                span {
+                    top: 147%;
+                }
+
+                .blue-graph {
+                    top: 138%;
+                }
+
+                .violet-graph {
+                    top: 204%;
+                }
+
+                .blue-count {
+                    top: 217%;
+                }
+
+                .violet-count {
+                    top: 268%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1065px) {
+    .main {
+        .full-info {
+            .three-dots {
+                left: 40%;
+            }
+            .graphics {
+
+                img {
+                    top: 90%;
+                }
+
+                span {
+                    top: 180%;
+                }
+
+                .blue-graph {
+                    top: 172%;
+                }
+
+                .violet-graph {
+                    top: 234%;
+                }
+
+                .blue-count {
+                    top: 240%;
+                }
+
+                .violet-count {
+                    top: 290%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .main {
+        width: 100%;
+
+        .login {
+            display: none;
+        }
+
+        .top {
+            .title {
+                margin: 0 auto;
+            }
+            .input-group {
+                width: 100%;
+
+                .title-inputs {
+                    margin: 0 35px;
+
+                    .domains {
+                        margin-right: 30%;
+                    }
+                }
+
+                #url {
+                    font-size: 10px;
+                }
+
+                .button-round {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .shorten {
+                    width: 50px;
+                }
+            }
+            .links {
+                margin-top: 5%;
+            }
+        }
+
+        .full-info {
+            .content {
+                margin: 7% auto;
+            }
+
+            .three-dots {
+                left: 40%;
+                position: initial;
+
+                .spotify, .ticket, .music {
+                    margin: 0 28px;
+                }
+            }
+
+            .audience {
+                left: 15%;
+
+                .small-info {
+                    width: 100%;
+                    margin: 10px 20px;
+                    text-align: center;
+                }
+            }
+
+            .graphics {
+                .intermediate-bands {
+                    height: 150px;
+                    top: 142%;
+                }
+                .intermediate-bands-small {
+                    height: 150px;
+                    top: 145%;
+                }
+
+                span {
+                    font-size: 15px;
+                    top: 153%;
+                }
+
+                img {
+                    top: 130%;
+                }
+
+                .blue-graph {
+                    top: 151%;
+                }
+
+                .blue-count {
+                    top: 169%;
+                }
+
+                .violet-graph {
+                    top: 167%;
+                }
+
+                .violet-count {
+                    top: 182%;
+                }
+            }
+        }
+
+        .background-buttons {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .main {
+
+        .full-info {
+            .three-dots {
+                left: 40%;
+                position: initial;
+
+                .spotify, .ticket, .music {
+                    margin: 0 20px;
+                }
+            }
+
+            .audience {
+                left: 3%;
+            }
+
+            .graphics {
+
+                span {
+                    top: 150%
+                }
+
+                .blue-graph {
+                    top: 148%;
+                }
+
+                .blue-count {
+                    top: 163%;
+                }
+
+                .violet-graph {
+                    top: 162%;
+                }
+
+                .violet-count {
+                    top: 175%;
+                }
+            }
+        }
+
+        .background-buttons {
+            display: none;
+        }
+    }
 }
